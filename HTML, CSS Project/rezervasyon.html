@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gusto Restorant Rezervasyon</title>
+    <style>
+         body{
+            padding: 0;
+            background: #ffffff;
+            font-family: Arial,Helvetica,sans-serif;
+            
+            margin: 0;
+            font-size: 12px;
+            color: #755e5e;
+        }
+        
+        #ust{
+            background: #f40202;
+            
+        
+            
+        }
+        #logo{
+            float: left;
+            width: 260px;
+            margin-top: 7px;
+            margin-left: 10px;
+        }
+        
+        #logo h1{
+            text-transform: uppercase;
+            font-size: 41px;
+            margin: 0;
+            padding: 0;
+            
+
+            
+            
+        }
+        
+        #logo h1 a{
+            text-decoration: none;
+            letter-spacing: 3px;
+            font-family: Georgia;
+            color: #d8cfcf;
+            
+        }
+        
+        #logo p{
+            margin-left: 3px;
+            margin-top: 0;
+            padding-top: 0;
+            letter-spacing: 2px;
+            color: #d6d2d2;
+            font-family: Georgia;
+            
+        }
+        
+        #menu{
+            
+            width: 649px;
+            margin: 30px 0 0 0;
+            padding: 0;
+            font-size: 13px;
+            text-align: right;
+            float: right;
+        }
+        
+        #menu ul{
+            margin: 0;
+            padding: 30px;
+            list-style: none;
+            
+        }
+        
+        #menu ul li{
+            margin-right: 35px;
+            display: inline;
+        }
+        
+        #menu ul li a{
+            text-decoration: none;
+            font-size: 15px;
+            font-family: Verdana;
+            color: #c8c6c6;
+        }
+        
+        #orta{
+          position:relative;  
+            
+        }
+       #rezervasyon{
+position:absolute;
+left: 600px;
+font-size: 25px;
+right: 300px;
+
+
+       }
+        .giriş{
+            width: 300px;
+            height: 30px;
+            font-size: 20px;
+            
+        }
+        
+    
+        #Baslık{
+            font-size: 50px;
+        }
+        
+        
+        .clear{
+            clear: both;
+        }
+        #gönder{
+         width: 220px;
+         height: 30px;
+         background-color: rgb(255, 0, 0);
+         font-size: 20px;
+         color: #ffffff;
+
+
+        }
+        #Kişi{
+         width: 220px;
+         height: 30px;
+        
+        }
+        
+    </style>
+</head>
+ 
+<body>
+    
+    <div id="ust">
+            <div id="logo">
+                <h1><a href="./Anasayfa.html">Gusto Restorant</a></h1>
+                <p>2019 dan beri</p>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="./Anasayfa.html">Anasayfa</a></li>
+                    <li><a href="./Menüler.html">Menüler</a></li>
+                    <li><a href="./rezervasyon.html">Rezervasyon</a></li>
+                    <li><a href="./hakkımızda.html">Hakkımızda</a></li>
+                    <li><a href="./iletişim.html">İletişim</a></li>
+                </ul>
+            </div>
+        <div class="clear"></div>
+        </div>
+        <div id="orta">
+           <div id="rezervasyon">
+
+            <h2 id="Baslık"> Rezervasyon</h2>
+            
+                <label for="isimvesoyisim">Adınız ve Soyadınız</label>
+             <br>
+            <input   id="isimvesoyisim"   class="giriş" type="text"  name="isimvesoyisim"> <br> <br> 
+            <label for="Email">Mail Adresi</label>
+            <br>
+           <input   id="Email"   class="giriş" type="email"  name="Email"> <br> <br>
+           <label for="numara">Telefon Numarası</label>
+           <br>
+          <input   id="numara"   class="giriş" type="number"  name="Numara"> <br> <br>
+          <label for="tarih">Tarih</label>
+           <br>
+          <input   id="tarih"   class="giriş" type="date"  name="tarih"> <br> <br>
+            Kişi Seçiniz<br> 
+          <select name="Kişi" id="Kişi">
+           <option value="1">1 Kişi</option>
+           <option value="2">2 Kişi</option>
+           <option value="3">3 Kişi</option>
+           <option value="4">4 Kişi</option>
+           <option value="5">5 Kişi</option>
+
+          </select>
+          <br>
+           <br>
+           <label for="Zaman">Zaman</label>
+             <br> 
+            <input   id="Zaman"   class="giriş" type="time"  name="Zaman"> <br> <br> Mesaj<br> 
+            <textarea name="mesaj" id="mesaj" cols="60" rows="10"></textarea>
+<br> <br>
+
+
+            <input   id="gönder" type="submit" value="Rezervasyon Oluştur"> 
+               <br> <br>
+
+
+            </form>
+           
+
+           
+
+
+
+        </div>
+           
+    
+</body>
+</html>
